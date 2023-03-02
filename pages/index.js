@@ -45,7 +45,7 @@ export default function Home({ frontendSkills, backendSkills, projects }) {
             	  I am a post-graduate from Kwantlen Polytechnic University with a Bachelors in Information and Technology. The program I attended covered general computer hardware and software concepts, business statistics, and technology in web development and networking. I specialized in web and mobile application development with a GPA of 3.8.
               </p>
               <p className="mt-6">
-              	Currently, I work at <a href="https://henesysgroup.com/" target="_blank" rel="noreferrer">Henesys Group</a> as a freelance developer. My responsibilities are oriented towards back-end or full-stack related projects. My preferred development stack include MongoDB, Express, Node, Vue / Nuxt, and Amazon Web Services for infrastructure/deployment support.
+              	Currently, I work at <a href="https://henesysdigital.com/" target="_blank" rel="noreferrer">Henesys Digital</a> as a freelance developer. My responsibilities are oriented towards back-end or full-stack related projects. My preferred development stack include MongoDB, Express, Node, Vue / Nuxt, and Amazon Web Services for infrastructure/deployment support.
               </p>
             </React.Fragment>
           );
@@ -85,7 +85,7 @@ export default function Home({ frontendSkills, backendSkills, projects }) {
               <div>
               <h2 className="text-3xl">Full Stack</h2>
               <h1 className="text-7xl">Developer</h1>
-              <p className="font-light mt-12">I am a Full Stack Developer with experience in content management, inventory management, digital marketing, and cryptocurrency services. I am well versed in many modern web based frameworks, and am currently pursuing Vue, Nuxt, MongoDB, Node and AWS development. I am currently employed as a freelance developer for Henesys Group.</p>
+              <p className="font-light mt-12">I am a Full Stack Developer with experience in content management, inventory management, digital marketing, and cryptocurrency services. I am well versed in many modern web based frameworks, and am currently pursuing Vue, Nuxt, MongoDB, Node and AWS development. I am currently employed as a freelance developer for Henesys Digital.</p>
               <p className="font-light mt-6">Additionally, I graduated with a Bachelors in Information Technology at Kwantlen Polytechnic University, specializing in Web and Mobile Application Development. </p>
               <p className="font-light mt-6">I&apos;ve got a keen interest for upcoming innovations and am constantly researching new technologies to improve my development skill set.</p>
               </div>
@@ -115,7 +115,7 @@ export default function Home({ frontendSkills, backendSkills, projects }) {
         <div className="ht-wrapper py-40">
           <SectionTitle 
           title="Skills" 
-          descriptions={["Having 6+ years of working experience in web and software development, i've has the opportunity to explore a vast range of popular tools and technology. The following grid ranks my technical competencies from most comfortable to least. Nonetheless, each item listed below has been fundamentally involved in at least one of my work related projects."]}
+          descriptions={["Having 7+ years of working experience in web and software development, i've had the opportunity to explore a vast range of popular tools and technology. The following grid ranks my technical competencies from most comfortable to least. Nonetheless, each item listed below has been fundamentally involved in at least one of my work related projects."]}
           append={(
             <div className="ht-button w-max no-hover">Check out my skill below <i className="fa fa-arrow-down ml-1" /></div>
           )}

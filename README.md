@@ -9,9 +9,8 @@ This repository holds the codebase for https://www.hichamtaha.com.
 ### How to Setup / Scripts
 
 - `yarn dev` Serve with hot reload at localhost:3000.
-- `yarn build` Build for production.
+- `yarn build` Generate static project in the /out folder. Used for static hosting on S3.
 - `yarn start` Launch server.
-- `yarn generate` Generate static project in the /dist folder. Used for static hosting on S3.
 
 ### Linting
 
@@ -35,7 +34,7 @@ This repository holds the codebase for https://www.hichamtaha.com.
     ├── images                  # Website and project images.
 ├── styles/                     # All css files relating to the project.
     ├── mixins                  # Global postcss mixins.
-├── dist/                       # Distributed client side files to serve for static hosting.
+├── out/                      	# Distributed client side files to serve for static hosting.
 ├── scripts/                    # Shell scripts.
     ├── pipeline/               # Pipeline scripts for Code Build to deploy to S3.
 ├── .gitignore                  # Files to ignore in bitbucket.
