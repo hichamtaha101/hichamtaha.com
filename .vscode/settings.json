@@ -1,0 +1,30 @@
+{
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	/* let eslint format these file types on save */
+	"eslint.validate": ["vue", "html", "javascript", "typescript"],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"prettier.useEditorConfig": false,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.tabWidth": 2,
+	"prettier.printWidth": 80,
+	"prettier.useTabs": true,
+	"prettier.semi": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": false,
+	/* let prettier format these file types on save */
+	"[scss][css][postcss][json][javascript][vue]": {
+		"editor.formatOnSave": true
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": null,
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2
+	},
+	"files.eol": "\n",
+}
