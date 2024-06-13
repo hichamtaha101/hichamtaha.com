@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       link: [
 				{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
 				{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' },
-				{ rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css' },
+				{ rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css' },
 			],
     },
   },

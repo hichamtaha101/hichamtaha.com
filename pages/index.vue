@@ -121,7 +121,7 @@ export default defineComponent({
 				<SectionTitle
 					title="Skills"
 					:descriptions="[
-						`Having 7+ years of working experience in web and software development, i've had the opportunity to explore a vast range of popular tools and technology. The following grid ranks my technical competencies from most comfortable to least. Nonetheless, each item listed below has been fundamentally involved in at least one of my work related projects.`,
+						`Having 8+ years of working experience in web and software development, i've had the opportunity to explore a vast range of popular tools and technology. The following grid ranks my technical competencies from most comfortable to least. Nonetheless, each item listed below has been fundamentally involved in at least one of my work related projects.`,
 					]"
 				>
 					<span class="ht-button w-max">
@@ -134,7 +134,7 @@ export default defineComponent({
 					class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 justify-between"
 				>
 					<div>
-						<div class="pb-0 md:pb-12 text-lg font-light">Front End</div>
+						<p class="text-lg font-light">Front End</p>
 						<div
 							v-for="(skill, i) in frontendSkills"
 							:key="i"
@@ -142,7 +142,7 @@ export default defineComponent({
 						>
 							<div class="w-40 text-6xl"><i :class="skill.icon" /></div>
 							<div class="flex-grow">
-								<div class="font-light mb-1">{{ skill.name }}</div>
+								<p class="font-light mb-1">{{ skill.name }}</p>
 								<div class="border border-black h-6">
 									<div
 										class="bg-black h-full"
@@ -153,7 +153,7 @@ export default defineComponent({
 						</div>
 					</div>
 					<div>
-						<div class="pb-0 lg:pb-12 text-lg font-light">Back End</div>
+						<p class="text-lg font-light">Back End</p>
 						<div
 							v-for="(skill, i) in backendSkills"
 							class="flex items-end mt-12"
@@ -161,7 +161,7 @@ export default defineComponent({
 						>
 							<div class="w-40 text-6xl"><i :class="skill.icon" /></div>
 							<div class="flex-grow">
-								<div class="font-light mb-1">{{ skill.name }}</div>
+								<p class="font-light mb-1">{{ skill.name }}</p>
 								<div class="border border-black h-6">
 									<div
 										class="bg-black h-full"
@@ -198,7 +198,7 @@ export default defineComponent({
 						<h3 class="text-4xl font-normal">
 							0{{ i + 1 }} {{ project.title }}
 						</h3>
-						<h6 class="font-normal mt-1">{{ project.timeline }}</h6>
+						<h4 class="font-normal mt-1">{{ project.timeline }}</h4>
 						<p class="mt-8 mb-6 font-light">{{ project.description }}</p>
 						<a
 							:href="project.link"
