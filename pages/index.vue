@@ -69,23 +69,18 @@ export default defineComponent({
 							<h1 class="text-3xl">Full Stack</h1>
 							<h2 class="text-6xl lg:text-7xl">Developer</h2>
 							<p class="font-light mt-6 lg:mt-12">
-								Hello, I am a Developer with 8 years and ongoing experience in
-								content management, inventory management, digital marketing, and
-								cryptocurrency services. I am well versed in many modern web
-								based frameworks, and am currently pursuing Next, Nuxt, Sanity,
-								MongoDB, Node and AWS development. Currently, I am employed as a
-								freelance developer for Henesys Digital, and a full time
-								employee at Evans Hunt.
+								I am a developer with over 8 years of experience in content
+								management, inventory management, digital marketing, and
+								cryptocurrency services. Proficient in modern web frameworks, I
+								am currently focusing on Next, Nuxt, Sanity, MongoDB, Node, and
+								AWS development. I work full-time at Evans Hunt.
 							</p>
 							<p class="font-light mt-6">
-								Additionally, I graduated with a Bachelors in Information
-								Technology at Kwantlen Polytechnic University, specializing in
-								Web and Mobile Application Development.
-							</p>
-							<p class="font-light mt-6">
-								With a keen interest for upcoming innovations in technology, I
-								am constantly researching and adding new development practices
-								and tools to my ever growing skill set.
+								I hold a Bachelor’s degree in Information Technology from
+								Kwantlen Polytechnic University, specializing in Web and Mobile
+								Application Development. Driven by a passion for technological
+								innovation, I continually explore and adopt new tools and
+								practices to expand my skill set.
 							</p>
 						</div>
 						<span class="text-lg font-light absolute bottom-8 lg:bottom-8">
@@ -121,7 +116,7 @@ export default defineComponent({
 				<SectionTitle
 					title="Skills"
 					:descriptions="[
-						`Having 8+ years of working experience in web and software development, i've had the opportunity to explore a vast range of popular tools and technology. The following grid ranks my technical competencies from most comfortable to least. Nonetheless, each item listed below has been fundamentally involved in at least one of my work related projects.`,
+						`With over 8 years of experience in web and software development, I have worked with a wide range of tools and technologies. The grid below ranks my technical competencies from most to least comfortable, with each listed skill having played a key role in at least one of my projects.`,
 					]"
 				>
 					<span class="ht-button w-max">
@@ -199,7 +194,16 @@ export default defineComponent({
 							0{{ i + 1 }} {{ project.title }}
 						</h3>
 						<h4 class="font-normal mt-1">{{ project.timeline }}</h4>
-						<p class="mt-8 mb-6 font-light">{{ project.description }}</p>
+						<p class="mt-8 mb-6 font-light" :title="project.description">
+							{{
+								project.description.length > 200
+									? project.description.substring(
+											0,
+											project.description.lastIndexOf(' ', 200)
+										) + '...'
+									: project.description
+							}}
+						</p>
 						<a
 							:href="project.link"
 							rel="canonical"
@@ -249,17 +253,10 @@ export default defineComponent({
 									application development with a GPA of 3.8.
 								</p>
 								<p class="mt-6">
-									Currently, I work at
-									<a
-										href="https://henesysdigital.com/"
-										target="_blank"
-										rel="noreferrer"
-										>Henesys Digital</a
-									>
-									as a freelance developer. My responsibilities are oriented
-									towards back-end or full-stack related projects. My preferred
-									development stack include MongoDB, Express, Node, Vue / Nuxt,
-									and Amazon Web Services for infrastructure/deployment support.
+									I currently work at Evans Hunt Group, focusing on back-end and
+									full-stack projects. My preferred development stack includes
+									MongoDB, Express, Node.js, Vue/Nuxt, and Amazon Web Services
+									for infrastructure and deployment support.
 								</p>
 							</template>
 							<template v-if="activeAboutSection === 'personal-hobbies'">

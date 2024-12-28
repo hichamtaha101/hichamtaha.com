@@ -86,14 +86,18 @@ const splideSettings = ref({
 			<div class="ht-wrapper flex flex-col gap-32">
 				<div v-for="(s, si) in project.sections" :key="si">
 					<SectionTitle
+						className="flex-col"
 						:title="s.title"
 						titleSize="text-5xl"
 						:descriptions="s.titleDescriptions"
 					>
-						<div class="flex gap-6 items-center">
-							<span class="ht-button">
+						<div
+							class="flex gap-6 items-center"
+							v-if="s.slides.length || s.link"
+						>
+							<p class="ht-button" v-if="s.slides.length">
 								Learn More <i class="fa fa-arrow-down ml-1" />
-							</span>
+							</p>
 							<a
 								class="ht-button"
 								v-if="s.link"
@@ -106,13 +110,9 @@ const splideSettings = ref({
 					</SectionTitle>
 					<Splide :options="splideSettings" class="my-12">
 						<SplideSlide v-for="(slide, sii) in s.slides" :key="sii">
-							<img
-								:src="slide.src"
-								:alt="slide.title"
-								class="object-cover aspect-[1800/1100]"
-								height="1080px"
-								width="1920px"
-							/>
+							<div class="aspect-[18/11] overflow-y-auto ht-scrollbar">
+								<img :src="slide.src" :alt="slide.title" />
+							</div>
 							<p
 								class="font-light text-lg border-t border-black inline-block mt-2 pt-3"
 							>
@@ -150,3 +150,22 @@ const splideSettings = ref({
 		</div>
 	</div>
 </template>
+<style lang="postcss">
+.ht-scrollbar {
+	&::-webkit-scrollbar {
+		width: 8px;
+		background-color: #f5f5f5;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #fff;
+		background-image: -webkit-gradient(
+			linear,
+			40% 0%,
+			75% 84%,
+			from(#4d9c41),
+			to(#19911d),
+			color-stop(0.6, #54de5d)
+		);
+	}
+}
+</style>
