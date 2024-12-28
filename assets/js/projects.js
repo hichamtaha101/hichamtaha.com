@@ -16,7 +16,7 @@ export default [
 				slides: [
 					{
 						title: 'Login',
-						src: '/projects/travel-alberta/web-app/user-dashboard.png',
+						src: '/projects/travel-alberta/web-app/user-login.png',
 					},
 					{
 						title: 'Create Account',
