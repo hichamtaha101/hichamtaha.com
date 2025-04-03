@@ -73,7 +73,7 @@ export default defineComponent({
 								management, inventory management, digital marketing, and
 								cryptocurrency services. Proficient in modern web frameworks, I
 								am currently focusing on Next, Nuxt, Sanity, MongoDB, Node, and
-								AWS development. I work full-time at Evans Hunt.
+								AWS development. I work full-time at Epic Games.
 							</p>
 							<p class="font-light mt-6">
 								I hold a Bachelor’s degree in Information Technology from
@@ -253,7 +253,7 @@ export default defineComponent({
 									application development with a GPA of 3.8.
 								</p>
 								<p class="mt-6">
-									I currently work at Evans Hunt Group, focusing on back-end and
+									I currently work at Epic Games, focusing on back-end and
 									full-stack projects. My preferred development stack includes
 									MongoDB, Express, Node.js, Vue/Nuxt, and Amazon Web Services
 									for infrastructure and deployment support.
